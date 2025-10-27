@@ -38,7 +38,7 @@ async function handler() {
     const list = $('.body_zb ul .body_zb_li .zb_word')
         .find('.list_font_pic > a:first-child')
         .toArray()
-        .slice(0, 30)
+        .slice(0, 100)
         .map((e) => $(e).attr('href'));
 
     const out = await Promise.all(
